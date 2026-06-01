@@ -16,14 +16,14 @@ import { Label } from '@/components/ui/label'
 import { Reveal } from '@/components/reveal'
 
 // Ganti dengan nomor WhatsApp Anda (format internasional tanpa tanda +)
-const WHATSAPP_NUMBER = '6281234567890'
+const WHATSAPP_NUMBER = '6281911864152'
 const EMAIL = 'halo@martinussetiawan.dev'
 
 const contactChannels = [
   {
     icon: MessageCircle,
     label: 'WhatsApp',
-    value: '+62 812-3456-7890',
+    value: '+62 819-1186-4152',
     href: `https://wa.me/${WHATSAPP_NUMBER}`,
   },
   {

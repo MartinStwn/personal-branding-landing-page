@@ -10,7 +10,7 @@ const navLinks = [
 ]
 
 const socials = [
-  { icon: MessageCircle, href: 'https://wa.me/6281234567890', label: 'WhatsApp' },
+  { icon: MessageCircle, href: 'https://wa.me/6281911864152', label: 'WhatsApp' },
   { icon: Mail, href: 'mailto:halo@martinussetiawan.dev', label: 'Email' },
   { icon: Linkedin, href: 'https://linkedin.com/in/martinussetiawan', label: 'LinkedIn' },
   { icon: Github, href: 'https://github.com/martinussetiawan', label: 'GitHub' },
