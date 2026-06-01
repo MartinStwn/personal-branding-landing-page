@@ -11,9 +11,9 @@ const navLinks = [
 
 const socials = [
   { icon: MessageCircle, href: 'https://wa.me/6281911864152', label: 'WhatsApp' },
-  { icon: Mail, href: 'mailto:halo@martinussetiawan.dev', label: 'Email' },
-  { icon: Linkedin, href: 'https://linkedin.com/in/martinussetiawan', label: 'LinkedIn' },
-  { icon: Github, href: 'https://github.com/martinussetiawan', label: 'GitHub' },
+  { icon: Mail, href: 'mailto:martin.cyber092@gmail.com', label: 'Email' },
+  { icon: Linkedin, href: 'https://linkedin.com/in/martincyber092', label: 'LinkedIn' },
+  { icon: Github, href: 'https://github.com/MartinStwn', label: 'GitHub' },
 ]
 
 export function Footer() {

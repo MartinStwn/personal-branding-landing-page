@@ -17,7 +17,7 @@ import { Reveal } from '@/components/reveal'
 
 // Ganti dengan nomor WhatsApp Anda (format internasional tanpa tanda +)
 const WHATSAPP_NUMBER = '6281911864152'
-const EMAIL = 'halo@martinussetiawan.dev'
+const EMAIL = 'martin.cyber092@gmail.com'
 
 const contactChannels = [
   {
@@ -35,14 +35,14 @@ const contactChannels = [
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    value: '/in/martinussetiawan',
-    href: 'https://linkedin.com/in/martinussetiawan',
+    value: '/in/martincyber092',
+    href: 'https://linkedin.com/in/martincyber092',
   },
   {
     icon: Github,
     label: 'GitHub',
-    value: '@martinussetiawan',
-    href: 'https://github.com/martinussetiawan',
+    value: '@MartinStwn',
+    href: 'https://github.com/MartinStwn',
   },
 ]
 
