@@ -4,24 +4,24 @@ import { Reveal } from '@/components/reveal'
 const testimonials = [
   {
     quote:
-      'Website company profile kami benar-benar berubah total. Tampilannya profesional dan banyak klien baru yang menghubungi setelah website online. Prosesnya cepat dan komunikatif.',
-    name: 'Budi Santoso',
-    role: 'Direktur, CV Maju Bersama',
-    initials: 'BS',
+      'The POS system transformed our daily operations. Order processing went from chaotic to seamless, and the real-time inventory tracking alone saved us thousands in wasted stock.',
+    name: 'Restaurant Owner',
+    role: 'Casual Dining Chain, Jakarta',
+    initials: 'RD',
   },
   {
     quote:
-      'Sebagai pemilik UMKM, saya butuh website yang terjangkau tapi tetap berkualitas. Hasilnya melebihi ekspektasi, cepat diakses dan mudah ditemukan di Google.',
-    name: 'Siti Rahmawati',
-    role: 'Pemilik, Dapur Sehat Nusantara',
-    initials: 'SR',
+      'We needed a dashboard that could handle our growing data without compromising security. The role-based access control let us give staff exactly the permissions they needed.',
+    name: 'Operations Director',
+    role: 'Retail Business, Bandung',
+    initials: 'OD',
   },
   {
     quote:
-      'Audit keamanan yang dilakukan sangat menyeluruh. Beberapa celah berbahaya berhasil ditemukan dan diperbaiki. Sekarang saya jauh lebih tenang dengan keamanan website bisnis saya.',
-    name: 'Andi Wijaya',
-    role: 'Founder, Startup TeknoLokal',
-    initials: 'AW',
+      'I was worried about moving our client management online, but the security measures — audit logs, encrypted data, access controls — gave me complete confidence.',
+    name: 'Practice Manager',
+    role: 'Professional Services Firm',
+    initials: 'PM',
   },
 ]
 
@@ -31,14 +31,14 @@ export function Testimonials() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-medium uppercase tracking-widest text-primary">
-            Testimoni
+            Testimonials
           </p>
           <h2 className="mt-3 text-balance text-3xl font-bold tracking-tight sm:text-4xl">
-            Apa Kata Klien
+            Trusted by Business Owners
           </h2>
           <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-            Kepuasan klien adalah prioritas utama dalam setiap proyek yang saya
-            kerjakan.
+            Feedback from clients who have transformed their operations with
+            secure business applications.
           </p>
         </Reveal>
 
@@ -71,11 +71,6 @@ export function Testimonials() {
                     </span>
                   </span>
                 </figcaption>
-                <div className="mt-4 rounded-xl border border-dashed border-primary/30 bg-primary/5 p-3 text-center">
-                  <p className="text-[11px] text-muted-foreground">
-                    🖼️ Screenshot ulasan asli dari platform Fastwork
-                  </p>
-                </div>
               </figure>
             </Reveal>
           ))}

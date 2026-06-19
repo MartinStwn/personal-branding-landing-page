@@ -10,50 +10,50 @@ import { Reveal } from '@/components/reveal'
 const steps = [
   {
     icon: MessagesSquare,
-    title: 'Konsultasi Kebutuhan',
+    title: 'Discovery & Planning',
     description:
-      'Memahami tujuan bisnis, target audiens, dan kebutuhan spesifik website Anda.',
+      'I learn about your business operations, pain points, and security requirements. We define scope, timeline, and deliverables.',
   },
   {
     icon: PencilRuler,
-    title: 'Desain & Perencanaan',
+    title: 'Architecture & Design',
     description:
-      'Menyusun struktur, alur, dan desain visual yang sesuai dengan identitas brand Anda.',
+      'I design the system architecture with security built in — data flow, access controls, and user experience mapped out.',
   },
   {
     icon: Code2,
-    title: 'Pengembangan Website',
+    title: 'Secure Development',
     description:
-      'Membangun website dengan kode bersih, modern, dan standar keamanan terbaik.',
+      'I build your application using OWASP-aligned practices, secure authentication, and protected database design.',
   },
   {
     icon: TestTube2,
-    title: 'Testing & Optimasi',
+    title: 'Security Testing & QA',
     description:
-      'Menguji performa, responsivitas, dan keamanan agar website siap dan optimal.',
+      'I test for vulnerabilities, validate access controls, and ensure performance meets your business needs.',
   },
   {
     icon: Rocket,
-    title: 'Launching & Support',
+    title: 'Deployment & Support',
     description:
-      'Meluncurkan website dan memberikan dukungan serta pemeliharaan berkelanjutan.',
+      'I deploy your system, provide documentation, and offer ongoing maintenance and security monitoring.',
   },
 ]
 
 export function Process() {
   return (
-    <section id="proses" className="py-24 sm:py-28">
+    <section id="process" className="py-24 sm:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-medium uppercase tracking-widest text-primary">
-            Proses Kerja
+            Process
           </p>
           <h2 className="mt-3 text-balance text-3xl font-bold tracking-tight sm:text-4xl">
-            Proses Pengerjaan
+            How I Work
           </h2>
           <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-            Alur kerja yang terstruktur dan transparan untuk memastikan hasil
-            terbaik bagi bisnis Anda.
+            A structured approach that ensures your project is delivered on time,
+            secure, and built to last.
           </p>
         </Reveal>
 
@@ -67,7 +67,9 @@ export function Process() {
               <Reveal as="li" key={step.title} delay={i * 80}>
                 <div
                   className={`relative flex items-start gap-5 lg:w-1/2 ${
-                    i % 2 === 1 ? 'lg:ml-auto lg:flex-row' : 'lg:flex-row-reverse lg:text-right'
+                    i % 2 === 1
+                      ? 'lg:ml-auto lg:flex-row'
+                      : 'lg:flex-row-reverse lg:text-right'
                   } ${i > 0 ? 'lg:-mt-6' : ''}`}
                 >
                   <div className="glass relative z-10 flex size-12 shrink-0 items-center justify-center rounded-xl text-primary">

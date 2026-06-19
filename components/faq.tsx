@@ -8,34 +8,34 @@ import {
 
 const faqs = [
   {
-    question: 'Berapa lama waktu pengerjaan sebuah website?',
+    question: 'How do you ensure my business data stays secure?',
     answer:
-      'Waktu pengerjaan bergantung pada kompleksitas proyek. Landing page biasanya selesai dalam 1–2 minggu, sedangkan website company profile atau toko online membutuhkan 2–4 minggu. Estimasi pasti akan diberikan setelah sesi konsultasi.',
+      'Security is built in from day one, not added later. I implement Argon2id password hashing, RBAC, CSRF protection, SQL injection prevention, XSS protection, and audit logging in every application. All projects follow OWASP Top 10 guidelines.',
   },
   {
-    question: 'Berapa biaya pembuatan website?',
+    question: 'How long does it take to build a business application?',
     answer:
-      'Biaya disesuaikan dengan kebutuhan dan fitur yang Anda inginkan. Setiap proyek bersifat custom, sehingga saya akan memberikan penawaran transparan setelah memahami kebutuhan bisnis Anda melalui konsultasi gratis.',
+      'Timeline depends on complexity. A dashboard or internal tool typically takes 3–6 weeks. A full POS system with inventory management takes 6–10 weeks. I provide a detailed timeline during our initial consultation.',
   },
   {
-    question: 'Apakah website yang dibuat sudah SEO friendly?',
+    question: 'Do you build custom features or use templates?',
     answer:
-      'Ya. Setiap website dibangun dengan struktur dan praktik SEO terbaik agar mudah ditemukan di mesin pencari seperti Google, sehingga membantu meningkatkan visibilitas bisnis Anda secara organik.',
+      'Every project is custom-built for your specific business needs. I don\'t use generic templates. Your system is designed around your workflows, team structure, and security requirements.',
   },
   {
-    question: 'Apakah ada layanan maintenance setelah website selesai?',
+    question: 'What happens after the project is delivered?',
     answer:
-      'Tentu. Saya menyediakan layanan maintenance dan support berkala yang mencakup pembaruan, pemantauan keamanan, serta perbaikan teknis agar website Anda selalu berjalan optimal.',
+      'I provide documentation, training for your team, and ongoing maintenance options. This includes security updates, performance monitoring, and feature enhancements as your business grows.',
   },
   {
-    question: 'Bagaimana dengan keamanan website saya?',
+    question: 'Can you integrate with our existing tools?',
     answer:
-      'Keamanan adalah prioritas utama. Saya menerapkan praktik keamanan terbaik dan dapat melakukan audit keamanan menyeluruh untuk mengidentifikasi serta menutup celah kerentanan yang berpotensi membahayakan data bisnis Anda.',
+      'Yes. I can build integrations with payment gateways, accounting software, inventory systems, and other tools your business already uses. We discuss integration needs during the planning phase.',
   },
   {
-    question: 'Apakah saya bisa mengelola sendiri konten website?',
+    question: 'Do you work with international clients?',
     answer:
-      'Bisa. Saya dapat membangun website dengan sistem manajemen konten yang mudah digunakan, sehingga Anda dapat memperbarui teks, gambar, dan produk secara mandiri tanpa pengetahuan teknis.',
+      'Yes. I work with clients worldwide. I am fully equipped for remote collaboration across time zones and communicate via email, WhatsApp, and video calls.',
   },
 ]
 
@@ -48,11 +48,11 @@ export function Faq() {
             FAQ
           </p>
           <h2 className="mt-3 text-balance text-3xl font-bold tracking-tight sm:text-4xl">
-            Pertanyaan yang Sering Diajukan
+            Frequently Asked Questions
           </h2>
           <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-            Jawaban atas pertanyaan umum dari calon klien seputar pembuatan
-            website.
+            Answers to common questions about building secure business
+            applications.
           </p>
         </Reveal>
 

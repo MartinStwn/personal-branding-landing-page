@@ -1,12 +1,11 @@
 import { ShieldCheck, Mail, Linkedin, Github, MessageCircle } from 'lucide-react'
 
 const navLinks = [
-  { label: 'Tentang', href: '#tentang' },
-  { label: 'Layanan', href: '#layanan' },
-  { label: 'Portofolio', href: '#portofolio' },
-  { label: 'Proses', href: '#proses' },
-  { label: 'FAQ', href: '#faq' },
-  { label: 'Kontak', href: '#kontak' },
+  { label: 'Services', href: '#services' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Security', href: '#security' },
+  { label: 'About', href: '#about' },
+  { label: 'Contact', href: '#contact' },
 ]
 
 const socials = [
@@ -23,7 +22,7 @@ export function Footer() {
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row md:items-start">
           <div className="max-w-sm text-center md:text-left">
             <a
-              href="#beranda"
+              href="#"
               className="inline-flex items-center gap-2 font-semibold tracking-tight"
             >
               <span className="flex size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
@@ -32,12 +31,12 @@ export function Footer() {
               Martinus Setiawan
             </a>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              Web Developer & Cyber Security Specialist. Membangun website
-              profesional, cepat, dan aman untuk pertumbuhan bisnis Anda.
+              Secure Business Web Application Developer. I build applications
+              that improve operations and protect your data.
             </p>
           </div>
 
-          <nav aria-label="Navigasi footer">
+          <nav aria-label="Footer navigation">
             <ul className="flex flex-wrap justify-center gap-x-6 gap-y-3 md:justify-start">
               {navLinks.map((link) => (
                 <li key={link.href}>
@@ -70,8 +69,8 @@ export function Footer() {
 
         <div className="mt-10 border-t border-border pt-6 text-center text-sm text-muted-foreground">
           <p>
-            &copy; {new Date().getFullYear()} Martinus Setiawan. Seluruh hak cipta
-            dilindungi.
+            &copy; {new Date().getFullYear()} Martinus Setiawan. All rights
+            reserved.
           </p>
         </div>
       </div>

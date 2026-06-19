@@ -15,7 +15,6 @@ import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
 import { Reveal } from '@/components/reveal'
 
-// Ganti dengan nomor WhatsApp Anda (format internasional tanpa tanda +)
 const WHATSAPP_NUMBER = '6281911864152'
 const EMAIL = 'martin.cyber092@gmail.com'
 
@@ -56,12 +55,12 @@ export function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    const text = `Halo, saya ${form.name}.%0A%0AEmail: ${form.email}%0ALayanan: ${form.service}%0A%0APesan:%0A${form.message}`
+    const text = `Hi, I'm ${form.name}.%0A%0AEmail: ${form.email}%0AService: ${form.service}%0A%0AMessage:%0A${form.message}`
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank')
   }
 
   return (
-    <section id="kontak" className="relative overflow-hidden py-24 sm:py-28">
+    <section id="contact" className="relative overflow-hidden py-24 sm:py-28">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute left-1/2 top-0 -z-10 h-[400px] w-[700px] -translate-x-1/2 rounded-full bg-primary/15 blur-[150px]"
@@ -69,14 +68,14 @@ export function Contact() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-medium uppercase tracking-widest text-primary">
-            Kontak
+            Contact
           </p>
           <h2 className="mt-3 text-balance text-3xl font-bold tracking-tight sm:text-4xl">
-            Siap Mengembangkan Bisnis Anda?
+            Ready to Build Your Secure Business System?
           </h2>
           <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-            Mari diskusikan kebutuhan website Anda. Konsultasi pertama gratis,
-            tanpa kewajiban apa pun.
+            Let&apos;s discuss your project. Book a free consultation — no
+            obligation, just a conversation about what you need.
           </p>
         </Reveal>
 
@@ -109,7 +108,7 @@ export function Contact() {
                   <MapPin className="size-5" />
                 </span>
                 <span>
-                  <span className="block text-sm font-semibold">Lokasi</span>
+                  <span className="block text-sm font-semibold">Location</span>
                   <span className="block text-sm text-muted-foreground">
                     Jakarta, Indonesia (Remote)
                   </span>
@@ -125,11 +124,11 @@ export function Contact() {
             >
               <div className="grid gap-5 sm:grid-cols-2">
                 <div className="space-y-2">
-                  <Label htmlFor="name">Nama Lengkap</Label>
+                  <Label htmlFor="name">Full Name</Label>
                   <Input
                     id="name"
                     required
-                    placeholder="Nama Anda"
+                    placeholder="Your name"
                     value={form.name}
                     onChange={(e) =>
                       setForm({ ...form, name: e.target.value })
@@ -142,7 +141,7 @@ export function Contact() {
                     id="email"
                     type="email"
                     required
-                    placeholder="email@bisnis.com"
+                    placeholder="you@business.com"
                     value={form.email}
                     onChange={(e) =>
                       setForm({ ...form, email: e.target.value })
@@ -151,10 +150,10 @@ export function Contact() {
                 </div>
               </div>
               <div className="mt-5 space-y-2">
-                <Label htmlFor="service">Layanan yang Diminati</Label>
+                <Label htmlFor="service">Service You Need</Label>
                 <Input
                   id="service"
-                  placeholder="Contoh: Website Company Profile"
+                  placeholder="e.g. Restaurant POS System"
                   value={form.service}
                   onChange={(e) =>
                     setForm({ ...form, service: e.target.value })
@@ -162,12 +161,12 @@ export function Contact() {
                 />
               </div>
               <div className="mt-5 space-y-2">
-                <Label htmlFor="message">Pesan</Label>
+                <Label htmlFor="message">Message</Label>
                 <Textarea
                   id="message"
                   required
                   rows={5}
-                  placeholder="Ceritakan kebutuhan bisnis dan website Anda..."
+                  placeholder="Tell me about your business and what you need..."
                   value={form.message}
                   onChange={(e) =>
                     setForm({ ...form, message: e.target.value })
@@ -176,7 +175,7 @@ export function Contact() {
               </div>
               <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                 <Button type="submit" size="lg" className="w-full sm:w-auto">
-                  Kirim via WhatsApp
+                  Send via WhatsApp
                   <Send className="size-4" />
                 </Button>
                 <Button
@@ -188,10 +187,13 @@ export function Contact() {
                 >
                   <a href={`https://wa.me/${WHATSAPP_NUMBER}`} target="_blank" rel="noreferrer">
                     <MessageCircle className="size-4" />
-                    Chat Langsung
+                    Chat Directly
                   </a>
                 </Button>
               </div>
+              <p className="mt-4 text-center text-xs text-muted-foreground">
+                Response within 24 hours
+              </p>
             </form>
           </Reveal>
         </div>

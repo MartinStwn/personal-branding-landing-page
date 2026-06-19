@@ -3,10 +3,10 @@
 import { useEffect, useRef, useState } from 'react'
 
 const stats = [
-  { value: 50, suffix: '+', label: 'Proyek Selesai' },
-  { value: 30, suffix: '+', label: 'Klien Puas' },
-  { value: 3, suffix: '+', label: 'Tahun Pengalaman' },
-  { value: 100, suffix: '+', label: 'Jam Konsultasi' },
+  { value: 50, suffix: '+', label: 'Projects Delivered' },
+  { value: 30, suffix: '+', label: 'Happy Clients' },
+  { value: 3, suffix: '+', label: 'Years Experience' },
+  { value: 0, suffix: '', label: 'Security Incidents' },
 ]
 
 function Counter({ target, suffix }: { target: number; suffix: string }) {
@@ -42,8 +42,7 @@ function Counter({ target, suffix }: { target: number; suffix: string }) {
 
   return (
     <span ref={ref}>
-      {count}
-      {suffix}
+      {count}{suffix}
     </span>
   )
 }
@@ -55,10 +54,10 @@ export function Stats() {
         <div className="glass rounded-3xl px-6 py-12 sm:px-12">
           <div className="mb-10 text-center">
             <h2 className="text-balance text-2xl font-bold tracking-tight sm:text-3xl">
-              Pencapaian
+              By the Numbers
             </h2>
             <p className="mt-3 text-sm text-muted-foreground">
-              Angka yang merepresentasikan dedikasi dan kepercayaan klien.
+              Results that demonstrate experience and client trust.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
